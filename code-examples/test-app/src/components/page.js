@@ -1,13 +1,15 @@
 import React from "react";
 import LogInDialog from "./login-dialog";
 
+import NavBar from "./nav-bar";
+
 export default class Page extends React.Component { 
     render() { 
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                        <h1> Menu goes here! </h1>
+                        <NavBar />
                     </div>
                 </div>
                 <div className="row">
