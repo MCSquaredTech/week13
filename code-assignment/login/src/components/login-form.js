@@ -1,9 +1,8 @@
 import React from "react";
-import LoginButton from "./login-button";
+import LogInButton from "./login-button";
 
-export default class LogInForm extends React.Component { 
-    render() { 
-        return (
+const LogInForm = () => { 
+    return (
         <div className="row">
             <div className="col-sm">
                 <div className="form">
@@ -33,10 +32,11 @@ export default class LogInForm extends React.Component {
                                 placeholder="Password" />
                         </div>
                     </div>
-                    <LoginButton />
+                    <LogInButton />
                 </div>
             </div>
         </div>
-        );
-    }
+    );
 }
+
+export default LogInForm;

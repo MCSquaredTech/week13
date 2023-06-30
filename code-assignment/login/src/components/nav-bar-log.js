@@ -1,13 +1,8 @@
 import React from "react";
-import Logo from "./logo";
-import NavBar from "./nav-menu";
 
-const logo = 'https://reactjs.org/logo-og.png'; 
-
-export default class NavLogo extends React.Component { 
-    render() { 
-        return (
-            <nav className="navbar navbar-dark bg-dark text-white">
+const NavBarWithLogo = () => { 
+    return (
+        <nav className="navbar navbar-dark bg-dark text-white">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src="https://reactjs.org/logo-og.png" alt="" width="160" height="100" className="d-inline-block align-text-between" />
@@ -15,7 +10,7 @@ export default class NavLogo extends React.Component {
                     </a>
                 </div>
             </nav>
-        );
-    }
-
+    );
 }
+
+export default NavBarWithLogo;
